@@ -1,0 +1,116 @@
+:root {
+    // colors
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+//   Font Family
+--ff: 'Red Hat Display', sans-serif;
+}
+body {
+    font-family: var(--ff);
+    background: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    .container{
+        width: 450px;
+        background: #fff;
+        margin:80px auto ;
+        text-align: center;
+        border-radius: 20px;
+      p{
+          font-size: 16px;
+      }
+        img{
+        width: 450px;
+            border-radius: 20px 20px 0 0;
+        }
+        .info{
+            padding: 20px 50px;
+          h2{
+            font-weight: 900;
+          }
+          p{
+            line-height: 1.5;
+            color: var(--desaturated-blue);
+          }
+          .plan-info{
+            display: flex;
+            justify-content: space-around;
+            background: var(--very-pale-blue);
+            padding: 5px 10px ;
+            border-radius: 10px;
+            align-items: center;
+            margin-bottom: 25px;
+          
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            .plan{
+                line-height: .1;
+                
+                h3{
+                    font-weight: 900;
+                }
+                p{
+                    line-height: .5;
+                    text-align: left;
+                }
+               
+            }
+            a{
+                color: var(--bright-blue);
+                font-size: 14px;
+                font-weight: 700;
+                margin-left: 60px;
+                &:hover{
+                  cursor: pointer;
+                  color: mediumslateblue;
+                }
+            }
+          }
+          button{
+            padding: 15px 110px;
+            border-radius: 10px;
+            color: #fff;
+            background: var(--bright-blue);
+            font-weight: 700;
+            border: none;
+            &:hover{
+              cursor: pointer;
+                background: mediumslateblue;
+            }
+
+           
+          }
+          .cancel{
+            color: var(--dark-blue);
+            font-weight: 700;
+            font-size: 14px;
+            &:hover{
+              color: #000;
+              cursor: pointer;
+            }
+           
+        }
+          
+        }
+
+        
+    }
+  
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen {
+      body{
+        width: 375px;
+       
+      }
+    }
+}
+
